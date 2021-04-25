@@ -16,7 +16,7 @@ namespace TrabalhoPratico.Models {
         /// <summary>
         /// Possui o Email do User
         /// </summary>
-        public string Email { get; set; }a
+        public string Email { get; set; }
 
         /// <summary>
         /// Possui a Password do User
