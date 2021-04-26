@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -12,10 +13,6 @@ namespace TrabalhoPratico.Models {
             ListaDeAnimes = new HashSet<Anime>();
             // inicializar a lista de Users dos Animes
             ListaDeUsers = new HashSet<UsersAnimes>();
-            // inicalizar a lista de Fotografias
-            ListasDeFotografias = new HashSet<Fotografias>();
-            // inicaliazar a lista de Links do Animes
-            ListaDeLinks = new HashSet<AnimeLinks>();
         }
 
         /// <summary>
@@ -55,23 +52,23 @@ namespace TrabalhoPratico.Models {
         public int Ano { get; set; }
 
         /// <summary>
+        /// Possui o Link do Ano
+        /// </summary>
+        public string Links { get; set; }
+
+        /// <summary>
+        /// Possui o caminho da foto em formato string
+        /// </summary>
+        public string Fotografia { get; set; }
+
+        /// <summary>
         /// Lista dos Animes
         /// </summary>
         public ICollection<Anime> ListaDeAnimes { get; set; }
 
         /// <summary>
-        /// Lista de Fotografias
-        /// </summary>
-        public ICollection<Fotografias> ListasDeFotografias { get; set; }
-
-        /// <summary>
         /// Lista de Users associados aos Animes
         /// </summary>
         public ICollection<UsersAnimes> ListaDeUsers { get; set; }
-
-        /// <summary>
-        /// Lista de Links associados aos Animes
-        /// </summary>
-        public ICollection<AnimeLinks> ListaDeLinks { get; set; }
     }
 }
