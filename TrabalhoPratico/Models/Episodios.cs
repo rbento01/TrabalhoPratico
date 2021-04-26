@@ -15,7 +15,7 @@ namespace TrabalhoPratico.Models {
         /// Possui o Identificador do Episodio
         /// </summary>
         [Key]
-        public int idEpisodio { get; set; }
+        public int NumEpisodio { get; set; } 
 
         /// <summary>
         /// FK para a Review do Anime

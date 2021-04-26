@@ -29,6 +29,6 @@ namespace TrabalhoPratico.Models {
         [ForeignKey(nameof(Episodios))]  // esta 'anotação' indica que o atributo 'idAnimeFK' está a executar o mesmo que o atributo 'idAnime',
                                      // e que representa uma FK para a classe Review
         public int idEpisodiosFK { get; set; }   // atributo para ser usado no SGBD e no C#. Representa a FK para a Fotografia do Anime
-        public Links IdEpisodios { get; set; }   // atributo para ser usado no C#. Representa a FK para a Fotografia do Anime
+        public Episodios IdEpisodios { get; set; }   // atributo para ser usado no C#. Representa a FK para a Fotografia do Anime
     }
 }

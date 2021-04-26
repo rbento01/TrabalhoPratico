@@ -24,11 +24,11 @@ namespace TrabalhoPratico.Models {
 
 
         /// <summary>
-        /// FK para a Fotografia do Anime
+        /// FK para o User ligado ao Anime
         /// </summary>
-        [ForeignKey(nameof(Users))]  // esta 'anotação' indica que o atributo 'idAnimeFK' está a executar o mesmo que o atributo 'idAnime',
-                                         // e que representa uma FK para a classe Review
-        public int idUsersFK { get; set; }   // atributo para ser usado no SGBD e no C#. Representa a FK para a Fotografia do Anime
-        public Links IdUsers { get; set; }   // atributo para ser usado no C#. Representa a FK para a Fotografia do Anime
+        [ForeignKey(nameof(Users))]  // esta 'anotação' indica que o atributo 'idUsersFK' está a executar o mesmo que o atributo 'idUsers',
+                                     // e que representa uma FK para a classe Users
+        public int idUsersFK { get; set; }   // atributo para ser usado no SGBD e no C#. Representa a FK para os Users e o Anime
+        public Users idUsers { get; set; }   // atributo para ser usado no C#. Representa a FK para os Users e o Anime
     }
 }

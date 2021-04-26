@@ -27,9 +27,14 @@ namespace TrabalhoPratico.Models {
         public string Nome { get; set; }
 
         /// <summary>
+        /// Possui a Quantidade de Episodios
+        /// </summary>
+        public string QuantEpisodios { get; set; }
+
+        /// <summary>
         /// Possui o Rating do Anime
         /// </summary>
-        public float Rating { get; set; }
+        public double Rating { get; set; }
 
         /// <summary>
         /// Possui a Sinopse do Anime
@@ -49,7 +54,7 @@ namespace TrabalhoPratico.Models {
         /// <summary>
         /// Possui o Valor do Ano
         /// </summary>
-        public int Ano { get; set; }
+        public string Ano { get; set; }
 
         /// <summary>
         /// Possui o Link do Ano
@@ -60,6 +65,11 @@ namespace TrabalhoPratico.Models {
         /// Possui o caminho da foto em formato string
         /// </summary>
         public string Fotografia { get; set; }
+
+        /// <summary>
+        /// Possui a Categoria do Anime
+        /// </summary>
+        public string Categoria { get; set; }
 
         /// <summary>
         /// Lista dos Animes

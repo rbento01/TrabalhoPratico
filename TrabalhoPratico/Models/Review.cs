@@ -21,12 +21,14 @@ namespace TrabalhoPratico.Models {
         /// <summary>
         /// Possui o Comentário do Utilizador
         /// </summary>
+        [Required]
         public string Comentario { get; set; }
 
         /// <summary>
         /// Possui a Rating do Anime
         /// </summary>
-        public int Rating { get; set; }
+        [Required]
+        public double Rating { get; set; }
 
         /// <summary>
         /// FK para a Review do User
