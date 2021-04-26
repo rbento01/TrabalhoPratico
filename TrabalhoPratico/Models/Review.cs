@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace TrabalhoPratico.Models {
     public class Review {
+        public Review() {
+            // inicializar a lista de Animes do User
+            ListaDeReviews = new HashSet<Review>();
 
+        }
         /// <summary>
         /// Possui o Identificador da Review
         /// </summary>
@@ -39,5 +43,10 @@ namespace TrabalhoPratico.Models {
                                      // e que representa uma FK para a classe Review
         public int idAnimeFK { get; set; }   // atributo para ser usado no SGBD e no C#. Representa a FK para a Review do Anime
         public Anime idAnime { get; set; }   // atributo para ser usado no C#. Representa a FK para a Review do Anime
+
+        /// <summary>
+        /// Lista de Links associados aos Animes
+        /// </summary>
+        public ICollection<Review> ListaDeReviews { get; set; }
     }
 }
