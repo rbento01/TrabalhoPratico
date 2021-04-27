@@ -84,6 +84,14 @@ namespace TrabalhoPratico.Data {
                 new UsersEpisodios { }
             );
         }
+            //Representar as Tabelas da BD
+            public DbSet<Anime> Anime { get; set; }
+            public DbSet<Episodios> Episodios { get; set; }
+            public DbSet<Users> Users { get; set; }
+            public DbSet<Review> Review { get; set; }
+            public DbSet<UsersAnimes> UsersAnimes { get; set; }
+            public DbSet<UsersEpisodios> UsersEpisodios { get; set; }
+    
         
     }
 }
